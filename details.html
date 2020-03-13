@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>detail</title>
+    <link rel="stylesheet" type="text/css" href="css\details.css" />
+    <link rel="stylesheet" type="text/css" href="css\reset.css" />
+    <script type="text/javascript">
+        function disp_alert() {
+            alert("添加成功")
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 id="logo">Art Store</h1>
+        <span id="slogan">lalala</span>
+        <ul>
+            <li>
+                <a href="load.html">登录</a>
+            </li>
+            <li>
+                <a href="register.html">注册</a>
+            </li>
+
+        </ul>
+    </header>
+
+    <div class="nav">
+        <ul>
+            <li><a href="HomePage1.html">首页</a></li>
+            <li><a href="search.html">搜索</a></li>
+            <li><a href="details.html">详情</a></li>
+        </ul>
+        <div class="search">
+            <input id="search" form="text" />
+            <a href="search.html">搜索</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2 class="nameofpic">Les Tournesols</h2>
+        <p class="author"><a href="search.html" style="text-decoration:underline;color:black">By Vincent van Gogh </a></p>
+        <img src=".\images\works\average\019050.jpg" height="444" width="330"/ >
+        <div class="details">
+            <p class="introduction">
+                a very beautiful picture 
+            </p>
+            <p class="price">
+                PRICE:<strong>1000000$</strong>
+            </p>
+            <div class="button1">
+                <img src=".\icon\2.ico" onclick="disp_alert()" style="margin-right:15px" >Add to shoppingcart 
+                <div style="display:block"><img src=".\icon\1.ico" onclick="disp_alert()" style="margin-right:15px">Add to wishlist</div>
+            </div>
+            <table class="tadetails">
+                <tbody>
+                    <tr>
+                        <th colspan="2">Product Details</th>
+                    </tr>
+                    <tr>
+                        <td>Date:</td>
+                        <td class="date">1888</td>
+                    </tr>
+                    <tr>
+                        <td>Medium:</td>
+                        <td class="Medium">Oil on canvas</td>
+                    </tr>
+                    <tr>
+                        <td>Dimensions:</td>
+                        <td class="Dimensions">100cm*80cm</td>
+                    </tr>
+                    <tr>
+                        <td>Subjects:</td>
+                        <td class="Subjects">Flower</td>
+                    </tr>
+                    <tr>
+                        <td>Genres:</td>
+                        <td class="Genres">Neoclassical</td>
+                    </tr>
+                    <tr>
+                        <td>Home:</td>
+                        <td class="Home">Baltimore Art Museum</td>
+                    </tr>
+                    <tr>
+                        <td>Heat:</td>
+                        <td Heat:>100</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="aside">
+            <table class="tapoparist" style="width:200px;">
+                <tr><th style="background-color:cornflowerblue">Pop Artist</th></tr>
+                <tr><td><a href="#">Van Gogh</a></td></tr>
+                <tr><td><a href="#">Picasso</a></td></tr>
+                <tr><td><a href="#">Monet</a></td></tr>
+                <tr><td><a href="#">Da Vinci</a></td></tr>
+                <tr><td><a href="#">Paul Cézanne</a></td></tr>
+                <tr><td><a href="#">Rousseau</a></td></tr>
+            </table>
+            <table class="tapopGenre" style="width:200px;">
+                <tr><th style="background-color:cornflowerblue">Pop Genres</th></tr>
+                <tr><td><a href="#">Classic</a></td></tr>
+                <tr><td><a href="#">Neoclassical</a></td></tr>
+                <tr><td><a href="#">Impressionism</a></td></tr>
+                <tr><td><a href="#"> Cubism</a></td></tr>
+                <tr><td><a href="#">surrealism</a></td></tr>
+                <tr><td><a href="#">Barbizon</a></td></tr>
+            </table>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

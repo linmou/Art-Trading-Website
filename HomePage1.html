@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Art Store</title>
+    <link rel="stylesheet" type="text/css" href="css\StyleSheet1.css" />
+    <link rel="stylesheet" type="text/css" href="css\reset.css" />
+
+
+</head>
+<body>
+    <header>
+        <h1 id="logo">Art Store</h1>
+        <span id="slogan">lalala</span>
+        <ul>
+            <li>
+                <a href="HomePage1.html">首页</a>
+            </li>
+            <li>
+                <a href="details.html">商品详情</a>
+            </li>
+            <li>
+                <a href="search.html">搜索</a>
+            </li>
+            <li>
+                <a href="javascript:openLogin();">登陆</a>
+            </li>
+            <li>
+                <a href="register.html">注册</a>
+            </li>
+        </ul>
+    </header>
+
+
+    <script>
+        function openLogin() {
+            document.getElementById("load").style.display = "";
+
+        }
+        function closeLogin() {
+            document.getElementById("load").style.display = "none";
+
+        }
+    </script>
+
+
+    <div id="load" style="display:none; ">
+        <section class="form">
+            <form id="submit" method="post" action="homePage2.html" onsubmit="return check()">
+                <div>用户：<input id="name" type="text" class="name" onblur="ckname()"> <div id="name2" class="error_box"style="margin:0;" ></div></div>
+                <div style="position:relative;top:1.5em;">密码：<input id="pwd" type="password" onblur="ckpwd()" class="pwd"><div id="pwd2" class="error_box" style="display:block;margin:0;"></div></div>
+                <a href="HomePage2"><input type="submit" value="登录" id="button" class="submit"></a>
+            </form>
+
+        </section>
+        <br><a href="javascript:closeLogin();" style="bottom:1em;position:absolute;margin:auto;right:10em">关闭登录框</a>
+    </div>
+
+    <div id="display">
+        <div class=" container">
+
+
+            <div class="picturelist">
+                <div class="picture" id="picture1">
+                    <a name="picture1">
+                        <img src=".\images\works\large\005040.jpg" class="img">
+
+                        <div class="content" id="content1">
+                            <p class="name">dance</p>
+                            <p class="author">xzx</p>
+                            <p class="intro">they are crazy</p>
+                            <p class="button"><a href="details.html">learn more</a></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="picture" id="picture2">
+                    <img src=".\images\works\large\138010.jpg" class="img">
+
+                    <div class="content" id="content2">
+                        <p class="name">island</p>
+                        <p class="author">lxx</p>
+                        <p class="intro">the island of forever</p>
+                        <p class="button"><a href="details.html">learn more</a></p>
+                    </div>
+
+                </div>
+                <div class="picture" id="picture3">
+                    <img src=".\images\works\large\063020.jpg" class="img">
+
+                    <div class="content" id="content3">
+                        <p class="name">lion</p>
+                        <p class="author">zxe</p>
+                        <p class="intro">it is very cute</p>
+                        <p class="button"><a href="details.html">learn more</a></p>
+                    </div>
+
+                </div>
+
+                <ul class="dolls" id="dolls">
+                    <li><a href="#" class="dol dol1"></a></li>
+                    <li><a href="#" class="dol dol2"></a></li>
+                    <li><a href="#" class="dol dol3"></a></li>
+
+                </ul>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+    <div id="smdisplay">
+        <table class="content2" style="transform:rotate(90deg)">
+            <tr>
+                <td>
+                    <img src=".\images\works\square-medium\104040.jpg">
+                </td>
+                <td>
+                    <img src=".\images\works\square-medium\019010.jpg">
+                </td>
+                <td>
+                    <img src=".\images\works\square-medium\106020.jpg">
+                </td>
+
+            </tr>
+            <tr>
+                <td class="name">Christ on the Cross</td>
+                <td class="name">VAN GOGH</td>
+                <td class="name">Het meisje met de parel</td>
+            </tr>
+            <tr>
+                <td class="author">lynn</td>
+                <td class="author">VAN GOGH</td>
+                <td class="author"> Jan Vermeer</td>
+            </tr>
+            <tr>
+                <td class="intro">Christ on the Cross</td>
+                <td class="intro">VAN GOGH's self-portraits</td>
+                <td class="intro">Girl with the Pearl Earing Portofolio </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="button2"><a href="details.html">learn more</a></div>
+                </td>
+                <td>
+                    <div class="button2"><a href="details.html">learn more</a></div>
+                </td>
+                <td>
+                    <div class="button2"><a href="details.html">learn more</a></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
+<script>
+
+
+    function ckname() {
+        var name = document.getElementById("name");
+        document.getElementById("name2").innerHTML = "";
+        if (name.value == "") {
+            document.getElementById("name2").innerHTML = "* 用户不能为空";
+        } else {
+            var figure = /^\d+$/;
+            var letter = /^[a-zA-Z]+$/;
+            if (figure.test(name.value) || letter.test(name.value) || (name.value.length < 6)) {
+                document.getElementById("name2").innerHTML = "*用户不存在";
+                name.value = "";
+            }
+        }
+    }
+
+    function ckpwd() {
+        var pwd = document.getElementById("pwd");
+        document.getElementById("pwd2").innerHTML = "";
+        if (pwd.value == "") {
+            document.getElementById("pwd2").innerHTML = "* 密码不能为空";
+        } else {
+
+            if (pwd.value.length < 6) {
+                document.getElementById("pwd2").innerHTML = "* 密码错误";
+                pwd.value = "";
+            }
+        }
+    }
+</script>
+

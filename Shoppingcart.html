@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="css\Shoppingcart.css">
+    <link rel="stylesheet" type="text/css" href="css\reset.css">
+</head>
+<body>
+    <header>
+        <h1 id="logo">Art Store</h1>
+        <span id="slogan">lalala</span>
+        <ul>
+            <li>
+                <p style="display:inline-block">欢迎 </p><a href="personal.html"><strong>小柒</strong></a>
+            </li>
+            <li>
+                <a href="HomePage1.html">登出</a>
+            </li>
+
+        </ul>
+    </header>
+
+    <div class="nav">
+        <ul>
+            <li><a href="HomePage2.html">首页</a></li>
+            <li><a href="search2.html">搜索</a></li>
+            <li><a href="details2.html">详情</a></li>
+        </ul>
+        <div class="search">
+            <input id="search" form="text" />
+            <a href="search2.html">搜索</a>
+        </div>
+    </div>
+
+   
+    <div class="main">
+
+        <table>
+            <tbody>
+                <tr >
+                    <td style="background-color:aliceblue;padding:10px 10px;" id="num1"><div class="pic"><a href="details2.html"><img src=".\images\subjects\square-medium\14.jpg" /></a></div></td>
+                    <td class="content">
+                        <div>
+                            <p class="name">the man</p>
+                            <p class="author"><a href="search.html" style="color:black">lxx</a></p>
+                            <div class="intro">In the reappearance of the 1799 - the second anti French Alliance war in 1802, Napoleon led the 40 thousand armies and boarded a steep the Alps to get a short cut across the St. Bernard pass and enter Italy. After Napoleon's army entered Italy, it surprised Austria's intervention in the army and finally won the battle of Mullen. The feat across the Alps was comparable to that of the Rome army, the Carthage commander, the Rome army and the Charleyman emperor who fought for Italy in the eighth Century ad. The victory of the campaign raised Napoleon's prestige and status and opened the way for him to reach the summit of power. </div>
+                        </div>
+                    </td>
+                    <td style="background-color:aliceblue;padding:10px 10px;">
+                        <div class="button">
+                            <div class="price">$100000</div>
+                            <div class="choose"><label><input type="checkbox" name="choose" style="margin-right:2px;" />选择</label></div>
+                            <div class="delete" onclick="del()">删除</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color:aliceblue;padding:10px 10px;"><div class="pic"><a href="details2.html"><img src=".\images\subjects\square-medium\1.jpg" /></a></div></td>
+                    <td class="content">
+                        <div>
+                            <p class="name">a horse</p>
+                            <p class="author"><a href="search.html" style="color:black;">zxe</a></p>
+                            <div class="intro">an very ugly horse!I don't know  why it is amazing. </div>
+                    </td>
+                    <td style="background-color:aliceblue;padding:10px 10px;">
+                        <div class="button">
+                            <div class="price">$1000</div>
+                            <div class="choose"><label><input type="checkbox" name="choose" style="margin-right:2px;" />选择</label></div>
+                            <div class="delete" onclick="del()">删除</div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div style="text-align: center;" class="foot">
+            <ul>
+                <li class="page_li">
+                    <button class="page_btn" style="width:70px">上一页</button>
+                </li>
+                <li class="page_li">
+                    <button class="page_btn">1</button>
+                </li>
+                <li class="page_li">
+                    <button class="page_btn">2</button>
+                </li>
+                <li class="page_li">
+                    <button class="page_btn">3</button>
+                </li>
+                <li class="page_li">
+                    <button class="page_btn">4</button>
+                </li>
+                <li class="page_li">
+                    <button class="page_btn">5</button>
+                </li>
+                <li class="page_li">
+                    <button class="page_btn">6</button>
+                </li>
+                <li class="page_li">
+                    <button class="page_btn">7</button>
+                </li>
+                <li class="page_li">
+                    <button class="page_btn" style="width:70px">下一页</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pay" onclick="buy()">付款:<strong>$200000</strong></div>
+    
+    
+</body>
+</html>
+<script>
+    function del (){
+
+        alert("删除成功")
+    }
+
+    function buy() {
+
+        alert("付款成功")
+    }
+</script>
