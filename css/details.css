@@ -1,0 +1,232 @@
+﻿a {
+    text-decoration: none;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: beige;
+    min-width: 1280px;
+    position: relative;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+}
+
+#logo {
+    display: inline;
+    color: white;
+    padding-left: 3em;
+    font-size: 200%;
+}
+
+#slogan {
+    display: inline;
+    color: white;
+    font-family: "Times New Roman";
+}
+
+header ul {
+    display: inline;
+    list-style: none;
+    position: absolute;
+    top: 0.5em;
+    right: 5.5em;
+}
+
+header li {
+    display: inline;
+    list-style: none;
+    padding-left: 0.5em;
+}
+
+    header li a {
+        color: white;
+    }
+
+        header li a:hover {
+            background-color: red;
+        }
+
+.nav {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: darkgrey;
+}
+
+    .nav ul {
+        display: inline;
+        list-style: none;
+        position: absolute;
+        top: 0.7em;
+        left: 3em;
+    }
+
+        .nav ul li {
+            display: inline;
+            list-style: none;
+            padding-left: 3em;
+        }
+
+            .nav ul li a {
+                color: white;
+                font-size: 120%;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-decoration: underline;
+            }
+
+
+
+.search {
+    float: right;
+    margin: auto 60px;
+    display: inline;
+    margin-top: 13px;
+    margin-right: 5.6em;
+}
+
+    .search a {
+        background-color: aliceblue;
+        padding: 5px 10px;
+        display: inline;
+        color: black;
+        font-size: 14px;
+    }
+
+.main{
+    margin-left:7em;
+    margin-top:2em;
+    position:relative;
+}
+
+.main h2{
+    font-size:200%;
+}
+
+ .artist {
+    font-size:80%;
+    font-style:italic;
+    margin-top:2px;
+    margin-bottom:25px;
+   
+    
+}
+
+.details{
+    display:inline-block;
+    top:4em;
+    padding-left:7em;
+    position:absolute;
+    margin:10px;
+    
+}
+
+    .details .descripton {
+        font-style: italic;
+        font-size: 16px;
+        height: 70px;
+        width: 300px;
+        overflow:scroll;
+        margin-bottom: 10px;
+    }
+
+  
+
+table th {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.details .tadetails th,td{
+    padding:10px;
+}
+    .tadetails th {
+        background-color: lightslategrey;
+    }
+
+
+
+
+
+    .button1 img {
+        height: 20px;
+        width: 20px;
+        border: 1px solid gray;
+        margin-right: 3em;
+        background-color: aliceblue;
+        cursor:pointer;
+    }
+
+.button1{
+    
+    padding:2px;
+    margin-top:10px;
+    padding:5px;
+    margin-bottom:10px;
+    
+}
+
+
+
+.aside{
+    float:right;
+    margin-right:5.5em;
+    
+}
+
+    .aside table {
+        text-align: center;
+        left: 30px;
+        border-color: cornflowerblue;
+        border: 3px solid cornflowerblue;
+        margin-bottom:3em;
+    }
+
+.tapoparist td{
+    padding:3px 100px;
+}
+.tapoparist tr {
+    border: 1px solid cornflowerblue;
+}
+
+.tapoparist th{
+    border-color:cornflowerblue;
+}
+
+.tapoparist a {
+    color:black;
+}
+.tapopGenre td {
+    padding: 3px 87px;
+}
+
+.tapopGenre th {
+    border-color: cornflowerblue;
+}
+
+.tapopGenre tr {
+    border: 1px solid cornflowerblue;
+}
+
+.tapopGenre a {
+    color:black;
+}
+
+
+
+
+
+
+
+   

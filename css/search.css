@@ -1,0 +1,170 @@
+﻿ a {
+    text-decoration: none;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: beige;
+    min-width: 1280px;
+    position: relative;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+}
+
+#logo {
+    display: inline;
+    color: white;
+    padding-left: 3em;
+    font-size: 200%;
+}
+
+#slogan {
+    display: inline;
+    color: white;
+    font-family: "Times New Roman";
+}
+
+header ul {
+    display: inline;
+    list-style: none;
+    position: absolute;
+    top: 0.5em;
+    right: 5.5em;
+}
+
+header li {
+    display: inline;
+    list-style: none;
+    padding-left: 0.5em;
+}
+
+    header li a {
+        color: white;
+    }
+
+        header li a:hover {
+            background-color: red;
+        }
+
+.nav {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: darkgrey;
+}
+
+    .nav ul {
+        display: inline;
+        list-style: none;
+        position: absolute;
+        top: 0.7em;
+        left: 3em;
+    }
+
+        .nav ul li {
+            display: inline;
+            list-style: none;
+            padding-left: 3em;
+        }
+
+            .nav ul li a {
+                color: white;
+                font-size: 120%;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                text-decoration: underline;
+            }
+
+
+
+.search {
+    float: right;
+    margin: auto 60px;
+    display: inline;
+    margin-top: 13px;
+    margin-right: 5.6em;
+}
+
+    .search a {
+        background-color: aliceblue;
+        padding: 5px 10px;
+        display: inline;
+        color: black;
+        font-size: 14px;
+    }
+
+
+.main{
+    min-width:1280px;
+    position:absolute;
+    
+  
+}
+
+table {
+    text-align: center;
+    width: 1150px;
+    height: 200px;
+    position: relative;
+    margin: auto;
+    border-spacing: 1em 1em;
+    table-layout: fixed;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+    table td {
+        background-color: powderblue;
+        padding: 2em;
+        overflow: hidden;
+        
+    }
+
+
+
+
+
+.showarea .name {
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style:normal;
+    
+
+}
+
+.showarea img{
+    height:132px;
+    width:132px;
+}
+
+.showarea .author{
+    font-size:14px;
+    font-style:italic;
+}
+.showarea .intro {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    margin: auto;
+    margin-top: 0.5em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+
+
+.page_btn{
+    padding:3px;
+}

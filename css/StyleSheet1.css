@@ -1,0 +1,351 @@
+
+
+
+a { text-decoration: none;
+    color:white;
+}
+* { margin: 0; padding: 0;}
+ul { list-style: none;}
+
+header {
+    background-color: black;
+}
+
+#logo {
+    display: inline;
+    color: white;
+    padding-left: 3em;
+    font-size: 200%;
+}
+
+#slogan {
+    display: inline;
+    color: white;
+    font-family: "Times New Roman";
+}
+
+header ul {
+    display: inline;
+    list-style: none;
+    position: absolute;
+    top: 0.5em;
+    right: 5em;
+}
+
+header li {
+    display: inline;
+    list-style: none;
+    padding-left: 0.5em;
+}
+
+    header li a {
+        color: white;
+    }
+
+        header li a:hover {
+            background-color: red;
+        }
+
+body {
+    background-color: beige;
+    min-width: 1280px;
+    min-height:850px;
+}
+
+#load {
+    POSITION: absolute;
+    left: 55%;
+    top: 50%;
+    width: 400px;
+    height: 300px;
+    margin-left: -300px;
+    margin-top: -200px;
+    border: 1px solid #888;
+    background-color:lightblue;
+    text-align: center;
+    z-index: 1000;
+    
+}
+
+#display {
+    height:500px;
+    width:1280px;
+    margin: auto; 
+    
+    
+}
+.container {
+    width: 1280px;
+    height: 500px;
+    overflow: hidden;
+    padding:0;
+    position:relative;
+    
+}
+
+.picturelist {
+    width: 3840px;
+    height: 500px;
+    animation: switch 6s ease-out infinite;
+}
+
+    
+
+.picture{
+    float:left;
+    width:1280px;
+    height:500px;
+    
+    position:relative;
+    
+}
+
+.picturelist.picture{
+    animation-play-state:paused;
+}
+
+.img{
+    z-index:3;
+    width: 1280px;
+    height: 500px;
+}
+
+.content{
+    z-index: 2;
+    width: 1280px;
+    height: 80px;
+    position:absolute;
+    margin:auto;
+    
+    top:210px;
+    text-align:center;
+}
+
+@keyframes switch {
+
+    0%, 25% {
+        margin-left: 0;
+        
+    }
+
+    35%, 60% {
+        margin-left: -1280px;
+    }
+
+    70%, 100% {
+        margin-left: -2560px;
+    }
+}
+
+
+.name {
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 130%;
+}
+.author {
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 90%;
+    
+}
+
+.intro {
+    font-style: italic;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 80%;
+    
+}
+
+.button {
+    background-color: none;
+    border: lightgrey solid 1px;
+    border-radius: 5px;
+    font-size: 90%;
+    
+    margin: 3px auto;
+    padding: 3px 5px;
+    display: inline-block;
+}
+
+    .button a:hover {
+        color: dodgerblue;
+    }
+
+.button2 {
+    background-color:burlywood;
+    border: none;
+    border-radius: 5px;
+    font-size: 90%;
+    margin: 5px 2px;
+    padding: 3px 5px;
+    display: inline-block;
+    position: relative;
+}
+.button2 a{
+    color:black;
+}
+    .button2 a:hover {
+        color: dodgerblue;
+    }
+
+
+form{
+    position:relative;
+    margin-top:5em;
+    margin-right:3em;
+    padding:0;
+}
+input {
+    width: 200px;
+    height: 20px;
+    padding:0;
+}
+
+.name {
+    position:relative;
+    margin: 0;
+    
+}
+
+.pwd {
+    position:relative;
+    margin: 0;
+    
+}
+
+.error_box {
+    color: red
+}
+
+.submit {
+    width: 70px;
+    position: relative;
+    left:1em;
+    border-radius: 3px;
+    background-color: cornflowerblue;
+    top:3em;
+}
+
+.left, .right {
+    z-index: 100;
+    background-color: rgba(255,255,255,0.5);
+    position: absolute;
+    top: 220px;
+    padding:10px 0;
+}
+.left {
+    left: 10px;
+}
+
+.right {    
+    right:10px;
+}
+
+.dolls{
+    position:absolute;
+    margin:auto;
+    bottom:10px;
+    width:400px;
+    z-index:10;
+    left:600px;
+    
+}
+ 
+
+.dolls li{
+    display:inline;
+}
+
+   
+.dolls li a{
+    width:20px;
+    height:20px;
+    background-color:rgba(255,255,255,0.6);
+    border-radius:50%;
+    display:inline-block;
+}
+
+.dolls li a:hover{
+    
+    background-color:antiquewhite;
+    
+}
+
+    .dolls .dol {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        
+        animation-duration: 6s;
+        animation-timing-function: linear;
+        animation-name: light;
+        animation-iteration-count: infinite;
+    }
+
+.dol1 {
+    animation-delay: 0s;
+}
+
+.dol2 {
+    animation-delay: 2s;
+}
+.dol3 {
+    animation-delay: 4s;
+}
+
+@keyframes light{
+    0%, 25% {
+        background-color: antiquewhite;
+    }
+
+    35%, 60% {
+        background-color: rgba(255,255,255,0.6);
+    }
+
+    70%, 100% {
+        background-color: rgba(255,255,255,0.6);
+    }
+}
+
+
+
+   
+
+#picNew {
+   
+    height: 200px;
+    margin: 30px;
+    background-color:beige;
+    position:relative;
+    padding-left:40px;
+    width:1280px;
+   
+}
+
+    #picNew> table {
+        
+        width: 1280px;
+        height: 100%;
+        text-align: center;
+        border-collapse: collapse;
+    }
+
+   table.content2{
+       text-align:center;
+   }
+
+   
+    .content2.name{
+        font-size:100%;
+    }
+
+
+    p{color:white;text-align:center;}
+
+
+
+
+
+
+
